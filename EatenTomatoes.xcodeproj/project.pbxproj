@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5361F2E9FBDF9A984EE90F18 /* libPods-EatenTomatoes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 243E41B469445F1DC2584C19 /* libPods-EatenTomatoes.a */; };
+		B110C7D51EA61ADA00F26611 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = B110C7D21EA61ADA00F26611 /* UIScrollView+SVInfiniteScrolling.m */; };
+		B110C7D61EA61ADA00F26611 /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = B110C7D41EA61ADA00F26611 /* UIScrollView+SVPullToRefresh.m */; };
+		B110C7D91EA63B2300F26611 /* ETDetailHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B110C7D81EA63B2300F26611 /* ETDetailHeaderCell.m */; };
+		B127A8CC1EA4A26B00AAA320 /* ETSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B127A8CB1EA4A26B00AAA320 /* ETSearchCell.m */; };
+		B127A8D01EA4D90200AAA320 /* SRPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B127A8CF1EA4D90200AAA320 /* SRPickerView.m */; };
+		B131364A1E9E074E0012CC18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B13136491E9E074E0012CC18 /* main.m */; };
+		B131364D1E9E074E0012CC18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B131364C1E9E074E0012CC18 /* AppDelegate.m */; };
+		B13136531E9E074E0012CC18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B13136511E9E074E0012CC18 /* Main.storyboard */; };
+		B13136561E9E074E0012CC18 /* EatenTomatoes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B13136541E9E074E0012CC18 /* EatenTomatoes.xcdatamodeld */; };
+		B13136581E9E074E0012CC18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B13136571E9E074E0012CC18 /* Assets.xcassets */; };
+		B131365B1E9E074E0012CC18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B13136591E9E074E0012CC18 /* LaunchScreen.storyboard */; };
+		B13136681E9E07AB0012CC18 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B13136671E9E07AB0012CC18 /* Podfile */; };
+		B131366D1E9E11F80012CC18 /* SRNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = B131366C1E9E11F80012CC18 /* SRNetwork.m */; };
+		B13136701E9E12140012CC18 /* ServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B131366F1E9E12140012CC18 /* ServiceManager.m */; };
+		B13136741E9E16F30012CC18 /* SRReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B13136731E9E16F30012CC18 /* SRReachability.m */; };
+		B13136781E9E2A920012CC18 /* ETSplashVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B13136771E9E2A920012CC18 /* ETSplashVC.m */; };
+		B17240A41E9E5C4800B67060 /* ETCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = B17240A31E9E5C4800B67060 /* ETCommon.m */; };
+		B17240AB1E9E5CC200B67060 /* ETGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = B17240AA1E9E5CC200B67060 /* ETGlobal.m */; };
+		B17240B01E9E60BE00B67060 /* FadeAnimationSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B17240AF1E9E60BE00B67060 /* FadeAnimationSegue.m */; };
+		B1A48FB41EA0AF48009FD858 /* ETSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A48FB31EA0AF48009FD858 /* ETSearchVC.m */; };
+		B1A48FB71EA0B6B3009FD858 /* ETDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A48FB61EA0B6B3009FD858 /* ETDetailVC.m */; };
+		B1A48FBB1EA0CE47009FD858 /* ETDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A48FBA1EA0CE47009FD858 /* ETDetailCell.m */; };
+		B1EAD3091E9F5F9B0081858F /* ETTopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EAD3081E9F5F9B0081858F /* ETTopVC.m */; };
+		B1EAD30C1E9F5FC00081858F /* ETNavigationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EAD30B1E9F5FC00081858F /* ETNavigationHandler.m */; };
+		B1EAD3111E9F678C0081858F /* UIAlertController+Window.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EAD3101E9F678C0081858F /* UIAlertController+Window.m */; };
+		B1EAD3171E9F79180081858F /* ETHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EAD3161E9F79180081858F /* ETHomeVC.m */; };
+		B1EAD31B1E9F7E5A0081858F /* ETListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EAD31A1E9F7E5A0081858F /* ETListCell.m */; };
+		B1EAD31F1E9F86040081858F /* ETMovieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EAD31E1E9F86040081858F /* ETMovieModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		243E41B469445F1DC2584C19 /* libPods-EatenTomatoes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EatenTomatoes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E9C805AB2EC648AB719E2BD /* Pods-EatenTomatoes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatenTomatoes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EatenTomatoes/Pods-EatenTomatoes.debug.xcconfig"; sourceTree = "<group>"; };
+		705752DA1CE9891FD0C9C300 /* Pods-EatenTomatoes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatenTomatoes.release.xcconfig"; path = "Pods/Target Support Files/Pods-EatenTomatoes/Pods-EatenTomatoes.release.xcconfig"; sourceTree = "<group>"; };
+		B110C7D01EA61ADA00F26611 /* SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPullToRefresh.h; sourceTree = "<group>"; };
+		B110C7D11EA61ADA00F26611 /* UIScrollView+SVInfiniteScrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVInfiniteScrolling.h"; sourceTree = "<group>"; };
+		B110C7D21EA61ADA00F26611 /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVInfiniteScrolling.m"; sourceTree = "<group>"; };
+		B110C7D31EA61ADA00F26611 /* UIScrollView+SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVPullToRefresh.h"; sourceTree = "<group>"; };
+		B110C7D41EA61ADA00F26611 /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
+		B110C7D71EA63B2300F26611 /* ETDetailHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETDetailHeaderCell.h; sourceTree = "<group>"; };
+		B110C7D81EA63B2300F26611 /* ETDetailHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETDetailHeaderCell.m; sourceTree = "<group>"; };
+		B127A8CA1EA4A26B00AAA320 /* ETSearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETSearchCell.h; sourceTree = "<group>"; };
+		B127A8CB1EA4A26B00AAA320 /* ETSearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETSearchCell.m; sourceTree = "<group>"; };
+		B127A8CE1EA4D90200AAA320 /* SRPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRPickerView.h; sourceTree = "<group>"; };
+		B127A8CF1EA4D90200AAA320 /* SRPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRPickerView.m; sourceTree = "<group>"; };
+		B13136451E9E074E0012CC18 /* EatenTomatoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatenTomatoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B13136491E9E074E0012CC18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B131364B1E9E074E0012CC18 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B131364C1E9E074E0012CC18 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B13136521E9E074E0012CC18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B13136551E9E074E0012CC18 /* EatenTomatoes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EatenTomatoes.xcdatamodel; sourceTree = "<group>"; };
+		B13136571E9E074E0012CC18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B131365A1E9E074E0012CC18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B131365C1E9E074E0012CC18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B13136671E9E07AB0012CC18 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../../Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B131366B1E9E11F80012CC18 /* SRNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRNetwork.h; sourceTree = "<group>"; };
+		B131366C1E9E11F80012CC18 /* SRNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRNetwork.m; sourceTree = "<group>"; };
+		B131366E1E9E12140012CC18 /* ServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceManager.h; sourceTree = "<group>"; };
+		B131366F1E9E12140012CC18 /* ServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceManager.m; sourceTree = "<group>"; };
+		B13136721E9E16F30012CC18 /* SRReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRReachability.h; sourceTree = "<group>"; };
+		B13136731E9E16F30012CC18 /* SRReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRReachability.m; sourceTree = "<group>"; };
+		B13136761E9E2A920012CC18 /* ETSplashVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETSplashVC.h; sourceTree = "<group>"; };
+		B13136771E9E2A920012CC18 /* ETSplashVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETSplashVC.m; sourceTree = "<group>"; };
+		B17240A21E9E5C4800B67060 /* ETCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETCommon.h; sourceTree = "<group>"; };
+		B17240A31E9E5C4800B67060 /* ETCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETCommon.m; sourceTree = "<group>"; };
+		B17240A81E9E5C6000B67060 /* Constraints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constraints.h; sourceTree = "<group>"; };
+		B17240A91E9E5CC200B67060 /* ETGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETGlobal.h; sourceTree = "<group>"; };
+		B17240AA1E9E5CC200B67060 /* ETGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETGlobal.m; sourceTree = "<group>"; };
+		B17240AE1E9E60BE00B67060 /* FadeAnimationSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FadeAnimationSegue.h; sourceTree = "<group>"; };
+		B17240AF1E9E60BE00B67060 /* FadeAnimationSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FadeAnimationSegue.m; sourceTree = "<group>"; };
+		B1A48FB21EA0AF48009FD858 /* ETSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETSearchVC.h; sourceTree = "<group>"; };
+		B1A48FB31EA0AF48009FD858 /* ETSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETSearchVC.m; sourceTree = "<group>"; };
+		B1A48FB51EA0B6B3009FD858 /* ETDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETDetailVC.h; sourceTree = "<group>"; };
+		B1A48FB61EA0B6B3009FD858 /* ETDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETDetailVC.m; sourceTree = "<group>"; };
+		B1A48FB91EA0CE47009FD858 /* ETDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETDetailCell.h; sourceTree = "<group>"; };
+		B1A48FBA1EA0CE47009FD858 /* ETDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETDetailCell.m; sourceTree = "<group>"; };
+		B1EAD3071E9F5F9B0081858F /* ETTopVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETTopVC.h; sourceTree = "<group>"; };
+		B1EAD3081E9F5F9B0081858F /* ETTopVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETTopVC.m; sourceTree = "<group>"; };
+		B1EAD30A1E9F5FC00081858F /* ETNavigationHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETNavigationHandler.h; sourceTree = "<group>"; };
+		B1EAD30B1E9F5FC00081858F /* ETNavigationHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETNavigationHandler.m; sourceTree = "<group>"; };
+		B1EAD30F1E9F678C0081858F /* UIAlertController+Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Window.h"; sourceTree = "<group>"; };
+		B1EAD3101E9F678C0081858F /* UIAlertController+Window.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Window.m"; sourceTree = "<group>"; };
+		B1EAD3151E9F79180081858F /* ETHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETHomeVC.h; sourceTree = "<group>"; };
+		B1EAD3161E9F79180081858F /* ETHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETHomeVC.m; sourceTree = "<group>"; };
+		B1EAD3191E9F7E5A0081858F /* ETListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETListCell.h; sourceTree = "<group>"; };
+		B1EAD31A1E9F7E5A0081858F /* ETListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETListCell.m; sourceTree = "<group>"; };
+		B1EAD31D1E9F86040081858F /* ETMovieModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETMovieModel.h; sourceTree = "<group>"; };
+		B1EAD31E1E9F86040081858F /* ETMovieModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETMovieModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B13136421E9E074D0012CC18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5361F2E9FBDF9A984EE90F18 /* libPods-EatenTomatoes.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		125FC39FB12D3C3130947EBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				243E41B469445F1DC2584C19 /* libPods-EatenTomatoes.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B110C7C71EA5F73B00F26611 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				B110C7CF1EA61A9400F26611 /* PullToRefresh */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		B110C7CF1EA61A9400F26611 /* PullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				B110C7D01EA61ADA00F26611 /* SVPullToRefresh.h */,
+				B110C7D11EA61ADA00F26611 /* UIScrollView+SVInfiniteScrolling.h */,
+				B110C7D21EA61ADA00F26611 /* UIScrollView+SVInfiniteScrolling.m */,
+				B110C7D31EA61ADA00F26611 /* UIScrollView+SVPullToRefresh.h */,
+				B110C7D41EA61ADA00F26611 /* UIScrollView+SVPullToRefresh.m */,
+			);
+			path = PullToRefresh;
+			sourceTree = "<group>";
+		};
+		B127A8C91EA4A25000AAA320 /* SearchtableviewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B127A8CA1EA4A26B00AAA320 /* ETSearchCell.h */,
+				B127A8CB1EA4A26B00AAA320 /* ETSearchCell.m */,
+			);
+			path = SearchtableviewCell;
+			sourceTree = "<group>";
+		};
+		B127A8CD1EA4D8F300AAA320 /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				B127A8CE1EA4D90200AAA320 /* SRPickerView.h */,
+				B127A8CF1EA4D90200AAA320 /* SRPickerView.m */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		B131363C1E9E074D0012CC18 = {
+			isa = PBXGroup;
+			children = (
+				B13136471E9E074E0012CC18 /* EatenTomatoes */,
+				B13136461E9E074E0012CC18 /* Products */,
+				D3F161D37F51B70DC79CE1C5 /* Pods */,
+				125FC39FB12D3C3130947EBC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B13136461E9E074E0012CC18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B13136451E9E074E0012CC18 /* EatenTomatoes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B13136471E9E074E0012CC18 /* EatenTomatoes */ = {
+			isa = PBXGroup;
+			children = (
+				B13136621E9E078D0012CC18 /* Model */,
+				B13136631E9E078D0012CC18 /* Services */,
+				B13136641E9E078D0012CC18 /* Utilities */,
+				B13136651E9E078D0012CC18 /* View Controllers */,
+				B13136661E9E078D0012CC18 /* Views */,
+				B131364B1E9E074E0012CC18 /* AppDelegate.h */,
+				B131364C1E9E074E0012CC18 /* AppDelegate.m */,
+				B13136511E9E074E0012CC18 /* Main.storyboard */,
+				B13136571E9E074E0012CC18 /* Assets.xcassets */,
+				B13136591E9E074E0012CC18 /* LaunchScreen.storyboard */,
+				B131365C1E9E074E0012CC18 /* Info.plist */,
+				B13136541E9E074E0012CC18 /* EatenTomatoes.xcdatamodeld */,
+				B13136481E9E074E0012CC18 /* Supporting Files */,
+			);
+			path = EatenTomatoes;
+			sourceTree = "<group>";
+		};
+		B13136481E9E074E0012CC18 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B13136491E9E074E0012CC18 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B13136621E9E078D0012CC18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B1EAD31C1E9F85F00081858F /* Movie */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B13136631E9E078D0012CC18 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B13136711E9E12DA0012CC18 /* SRReachability */,
+				B13136691E9E11F80012CC18 /* ServiceManager */,
+				B131366A1E9E11F80012CC18 /* SRNetwork */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B13136641E9E078D0012CC18 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B110C7C71EA5F73B00F26611 /* Lib */,
+				B1EAD30D1E9F67670081858F /* Category */,
+				B17240AD1E9E60BB00B67060 /* FadeAnimation */,
+				B17240A11E9E5C2700B67060 /* Common */,
+				B13136671E9E07AB0012CC18 /* Podfile */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B13136651E9E078D0012CC18 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B1EAD3121E9F79080081858F /* Details */,
+				B1EAD3131E9F79080081858F /* Home */,
+				B1EAD3141E9F79080081858F /* Search */,
+				B17240AC1E9E5DC100B67060 /* Topbar */,
+				B13136751E9E2A820012CC18 /* Splash */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B13136661E9E078D0012CC18 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B127A8CD1EA4D8F300AAA320 /* PickerView */,
+				B127A8C91EA4A25000AAA320 /* SearchtableviewCell */,
+				B1A48FB81EA0CE3A009FD858 /* DetailTableviewCell */,
+				B1EAD3181E9F7E450081858F /* CollectionviewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B13136691E9E11F80012CC18 /* ServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				B131366E1E9E12140012CC18 /* ServiceManager.h */,
+				B131366F1E9E12140012CC18 /* ServiceManager.m */,
+			);
+			name = ServiceManager;
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		B131366A1E9E11F80012CC18 /* SRNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				B131366B1E9E11F80012CC18 /* SRNetwork.h */,
+				B131366C1E9E11F80012CC18 /* SRNetwork.m */,
+			);
+			path = SRNetwork;
+			sourceTree = "<group>";
+		};
+		B13136711E9E12DA0012CC18 /* SRReachability */ = {
+			isa = PBXGroup;
+			children = (
+				B13136721E9E16F30012CC18 /* SRReachability.h */,
+				B13136731E9E16F30012CC18 /* SRReachability.m */,
+			);
+			path = SRReachability;
+			sourceTree = "<group>";
+		};
+		B13136751E9E2A820012CC18 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				B13136761E9E2A920012CC18 /* ETSplashVC.h */,
+				B13136771E9E2A920012CC18 /* ETSplashVC.m */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		B17240A11E9E5C2700B67060 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B17240A21E9E5C4800B67060 /* ETCommon.h */,
+				B17240A31E9E5C4800B67060 /* ETCommon.m */,
+				B17240A81E9E5C6000B67060 /* Constraints.h */,
+				B17240A91E9E5CC200B67060 /* ETGlobal.h */,
+				B17240AA1E9E5CC200B67060 /* ETGlobal.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B17240AC1E9E5DC100B67060 /* Topbar */ = {
+			isa = PBXGroup;
+			children = (
+				B1EAD3071E9F5F9B0081858F /* ETTopVC.h */,
+				B1EAD3081E9F5F9B0081858F /* ETTopVC.m */,
+				B1EAD30A1E9F5FC00081858F /* ETNavigationHandler.h */,
+				B1EAD30B1E9F5FC00081858F /* ETNavigationHandler.m */,
+			);
+			path = Topbar;
+			sourceTree = "<group>";
+		};
+		B17240AD1E9E60BB00B67060 /* FadeAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B17240AE1E9E60BE00B67060 /* FadeAnimationSegue.h */,
+				B17240AF1E9E60BE00B67060 /* FadeAnimationSegue.m */,
+			);
+			path = FadeAnimation;
+			sourceTree = "<group>";
+		};
+		B1A48FB81EA0CE3A009FD858 /* DetailTableviewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B1A48FB91EA0CE47009FD858 /* ETDetailCell.h */,
+				B1A48FBA1EA0CE47009FD858 /* ETDetailCell.m */,
+				B110C7D71EA63B2300F26611 /* ETDetailHeaderCell.h */,
+				B110C7D81EA63B2300F26611 /* ETDetailHeaderCell.m */,
+			);
+			path = DetailTableviewCell;
+			sourceTree = "<group>";
+		};
+		B1EAD30D1E9F67670081858F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B1EAD30E1E9F67670081858F /* Alertview */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		B1EAD30E1E9F67670081858F /* Alertview */ = {
+			isa = PBXGroup;
+			children = (
+				B1EAD30F1E9F678C0081858F /* UIAlertController+Window.h */,
+				B1EAD3101E9F678C0081858F /* UIAlertController+Window.m */,
+			);
+			path = Alertview;
+			sourceTree = "<group>";
+		};
+		B1EAD3121E9F79080081858F /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				B1A48FB51EA0B6B3009FD858 /* ETDetailVC.h */,
+				B1A48FB61EA0B6B3009FD858 /* ETDetailVC.m */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		B1EAD3131E9F79080081858F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B1EAD3151E9F79180081858F /* ETHomeVC.h */,
+				B1EAD3161E9F79180081858F /* ETHomeVC.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B1EAD3141E9F79080081858F /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				B1A48FB21EA0AF48009FD858 /* ETSearchVC.h */,
+				B1A48FB31EA0AF48009FD858 /* ETSearchVC.m */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		B1EAD3181E9F7E450081858F /* CollectionviewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B1EAD3191E9F7E5A0081858F /* ETListCell.h */,
+				B1EAD31A1E9F7E5A0081858F /* ETListCell.m */,
+			);
+			path = CollectionviewCell;
+			sourceTree = "<group>";
+		};
+		B1EAD31C1E9F85F00081858F /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				B1EAD31D1E9F86040081858F /* ETMovieModel.h */,
+				B1EAD31E1E9F86040081858F /* ETMovieModel.m */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		D3F161D37F51B70DC79CE1C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E9C805AB2EC648AB719E2BD /* Pods-EatenTomatoes.debug.xcconfig */,
+				705752DA1CE9891FD0C9C300 /* Pods-EatenTomatoes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B13136441E9E074D0012CC18 /* EatenTomatoes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B131365F1E9E074E0012CC18 /* Build configuration list for PBXNativeTarget "EatenTomatoes" */;
+			buildPhases = (
+				C88892ABE459DED0B08865F5 /* [CP] Check Pods Manifest.lock */,
+				B13136411E9E074D0012CC18 /* Sources */,
+				B13136421E9E074D0012CC18 /* Frameworks */,
+				B13136431E9E074D0012CC18 /* Resources */,
+				ECA04449199288FF6EAB77BA /* [CP] Embed Pods Frameworks */,
+				EF5EF8CAB447A6FCCCBC0B65 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EatenTomatoes;
+			productName = EatenTomatoes;
+			productReference = B13136451E9E074E0012CC18 /* EatenTomatoes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B131363D1E9E074D0012CC18 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Saheb Roy";
+				TargetAttributes = {
+					B13136441E9E074D0012CC18 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = B13136401E9E074D0012CC18 /* Build configuration list for PBXProject "EatenTomatoes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B131363C1E9E074D0012CC18;
+			productRefGroup = B13136461E9E074E0012CC18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B13136441E9E074D0012CC18 /* EatenTomatoes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B13136431E9E074D0012CC18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B131365B1E9E074E0012CC18 /* LaunchScreen.storyboard in Resources */,
+				B13136581E9E074E0012CC18 /* Assets.xcassets in Resources */,
+				B13136681E9E07AB0012CC18 /* Podfile in Resources */,
+				B13136531E9E074E0012CC18 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C88892ABE459DED0B08865F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ECA04449199288FF6EAB77BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EatenTomatoes/Pods-EatenTomatoes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF5EF8CAB447A6FCCCBC0B65 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EatenTomatoes/Pods-EatenTomatoes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B13136411E9E074D0012CC18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B13136781E9E2A920012CC18 /* ETSplashVC.m in Sources */,
+				B131364D1E9E074E0012CC18 /* AppDelegate.m in Sources */,
+				B1EAD3171E9F79180081858F /* ETHomeVC.m in Sources */,
+				B1EAD31F1E9F86040081858F /* ETMovieModel.m in Sources */,
+				B110C7D91EA63B2300F26611 /* ETDetailHeaderCell.m in Sources */,
+				B1A48FB41EA0AF48009FD858 /* ETSearchVC.m in Sources */,
+				B131366D1E9E11F80012CC18 /* SRNetwork.m in Sources */,
+				B13136701E9E12140012CC18 /* ServiceManager.m in Sources */,
+				B1EAD3091E9F5F9B0081858F /* ETTopVC.m in Sources */,
+				B1EAD30C1E9F5FC00081858F /* ETNavigationHandler.m in Sources */,
+				B17240AB1E9E5CC200B67060 /* ETGlobal.m in Sources */,
+				B1A48FB71EA0B6B3009FD858 /* ETDetailVC.m in Sources */,
+				B110C7D61EA61ADA00F26611 /* UIScrollView+SVPullToRefresh.m in Sources */,
+				B131364A1E9E074E0012CC18 /* main.m in Sources */,
+				B127A8D01EA4D90200AAA320 /* SRPickerView.m in Sources */,
+				B1EAD31B1E9F7E5A0081858F /* ETListCell.m in Sources */,
+				B110C7D51EA61ADA00F26611 /* UIScrollView+SVInfiniteScrolling.m in Sources */,
+				B13136561E9E074E0012CC18 /* EatenTomatoes.xcdatamodeld in Sources */,
+				B13136741E9E16F30012CC18 /* SRReachability.m in Sources */,
+				B1EAD3111E9F678C0081858F /* UIAlertController+Window.m in Sources */,
+				B127A8CC1EA4A26B00AAA320 /* ETSearchCell.m in Sources */,
+				B17240B01E9E60BE00B67060 /* FadeAnimationSegue.m in Sources */,
+				B1A48FBB1EA0CE47009FD858 /* ETDetailCell.m in Sources */,
+				B17240A41E9E5C4800B67060 /* ETCommon.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B13136511E9E074E0012CC18 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B13136521E9E074E0012CC18 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B13136591E9E074E0012CC18 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B131365A1E9E074E0012CC18 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B131365D1E9E074E0012CC18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B131365E1E9E074E0012CC18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B13136601E9E074E0012CC18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E9C805AB2EC648AB719E2BD /* Pods-EatenTomatoes.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = EatenTomatoes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = in.co.Saheb.OFTL.EatenTomatoes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B13136611E9E074E0012CC18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 705752DA1CE9891FD0C9C300 /* Pods-EatenTomatoes.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = EatenTomatoes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = in.co.Saheb.OFTL.EatenTomatoes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B13136401E9E074D0012CC18 /* Build configuration list for PBXProject "EatenTomatoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B131365D1E9E074E0012CC18 /* Debug */,
+				B131365E1E9E074E0012CC18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B131365F1E9E074E0012CC18 /* Build configuration list for PBXNativeTarget "EatenTomatoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B13136601E9E074E0012CC18 /* Debug */,
+				B13136611E9E074E0012CC18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B13136541E9E074E0012CC18 /* EatenTomatoes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B13136551E9E074E0012CC18 /* EatenTomatoes.xcdatamodel */,
+			);
+			currentVersion = B13136551E9E074E0012CC18 /* EatenTomatoes.xcdatamodel */;
+			path = EatenTomatoes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B131363D1E9E074D0012CC18 /* Project object */;
+}
